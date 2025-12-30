@@ -1,0 +1,4 @@
+1. download all data : python3 download_data.py raw --video_id_csv raw_train_val_splits.csv --download_dir /home/devika/Desktop/MasterProject/Code/processarkit/arkitscenes/ --raw_dataset_assets mov annotation mesh confidence highres_depth lowres_depth lowres_wide.traj lowres_wide lowres_wide_intrinsics ultrawide ultrawide_intrinsics vga_wide vga_wide_intrinsics
+2. download only lowres_wide folder : python3 download_data.py raw --video_id_csv raw_train_val_splits.csv --download_dir /home/devika/Desktop/MasterProject/Code/processarkit/arkitscenes/ --raw_dataset_assets lowres_wide
+3. processarkit : python3 processarkit.py     --video_id 40753679     --fold Training     --csv_path raw_train_val_splits.csv     --download_dir ./arkitscenes     --output_dir ./segmentation_summary
+4. conda activate master_project
